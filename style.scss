@@ -21,17 +21,22 @@ body {
 }
 
 #container {
-    width: 25rem;
-    margin: 3rem auto;
+    width: 400px;
+    margin: 40px auto 0;
     background-image: url('texture-img.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    padding: 6rem;
+    padding: 50px ;
+    text-align: center;
+    box-sizing: border-box;
+
+
 }
 
 h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(39, 18, 5);
+
 }
 
 form input,
@@ -51,11 +56,37 @@ form input[type="text"] {
 }
 
 button {
-    width: 6rem;
+    width: 70%;
     background-color: rgb(204, 100, 15);
     border: none;
     padding: .5rem;
     cursor: pointer;
     color: $color2;
     font-weight: bold;
+    box-shadow: 3px 2px 3px rgb(156, 156, 156);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(119, 71, 31);
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+
+}
+
+#totalTip {
+    font-size:15px ;
+    margin: 10px;
+    padding-bottom: .2rem;
+}
+
+#totalTip:before {
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+
 }
