@@ -4,14 +4,58 @@
     padding: 0px;
 }
 
-$color1:rgb(44, 36, 36);
+$color1:rgb(0, 0, 0);
 $color2:rgb(233, 227, 227);
 $color3:rgb(105, 105, 105);
 $padding:4vh;
 $gap:3.5vh;
 
-html {
+body {
     font-size: 16px;
     font-family: sans-serif;
-    color: rgb(22, 22, 22);
+    background: rgb(187, 181, 181) url('background.jpg') center center no-repeat;
+    background-size:cover;
+    color: $color1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    width: 25rem;
+    margin: 3rem auto;
+    background-image: url('texture-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form input,
+form select {
+    padding: 0.5rem;
+    margin: .4rem 0;
+}
+
+form label {
+    display: block;
+    margin: 1.2rem 0;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 3rem;
+}
+
+button {
+    width: 6rem;
+    background-color: rgb(204, 100, 15);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    color: $color2;
+    font-weight: bold;
 }
